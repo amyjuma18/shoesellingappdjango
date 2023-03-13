@@ -8,3 +8,7 @@ class Shoes(models.Model):
     class Meta:
         db_table = 'shoes'
 
+class Persons(models.model):
+    persons_phone_number = models.CharField(max_length=10)
+    class Meta:
+        db_table = 'persons'

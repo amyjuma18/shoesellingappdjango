@@ -81,7 +81,7 @@ def mpesa(request):
     cl = MpesaClient()
     phone_number = '0724579334'
     amount = 1
-    account_reference = 'buy shoes'
+    account_reference = 'BUY SHOES'
     transaction_desc = 'paying shoes'
     callback_url = 'https://api.darajambili.com/express-payment'
     response = cl.stk_push(phone_number, amount, account_reference, transaction_desc, callback_url)
