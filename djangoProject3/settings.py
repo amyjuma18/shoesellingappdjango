@@ -38,8 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'shoes',
-    'django_daraja',
-    'Persons',
+
+
 ]
 
 MIDDLEWARE = [
@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'djangoProject3.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'shoesellingapp',
+        'NAME': 'shoesapp',
         'USER': 'root',
         'PASSWORD': '',
         'HOST': 'localhost',

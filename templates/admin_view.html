@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+
+.card-column {
+    width: 1200px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 10px;
+
+}
+.card-column div {
+  width: 400px;
+
+}
+
+
+    @media only screen and (max-width: 600px) {
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-black navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand">
+      <img src="data:image/png;base64,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" alt="Avatar Logo" style="width:40px;" class="rounded-circle">
+    </a>
+      <h class="col-7" style="color:navajowhite"><strong>shoes</strong></h>
+  </div>
+</nav>
+
+{#<div class="flex-container">#}
+ <div class="card-column">
+    {% for adminshoes in adminshoes %}
+
+        <div class="container mt-3">
+  <div class="card" style="width:400px">
+    <img class="card-img-top" src="{{ adminshoes.shoesimage }}" alt="Card image cap" width="400" height="400" >
+    <div class="card-body">
+      <h4 class="card-title">{{ adminshoes.shoesname }}</h4>
+      <p class="card-text">Ksh {{ adminshoes.shoesprice }}</p>
+      <a href="/checkout/{{ adminshoes.id }}"class="btn btn-primary">Checkout</a>
+    </div>
+  </div>
+      </div>
+
+    {% endfor %}
+ </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

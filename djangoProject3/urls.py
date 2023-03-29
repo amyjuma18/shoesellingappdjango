@@ -1,13 +1,16 @@
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from shoes import views
 
-# make up of a url is the name of the route  , package with templates and then method in templates function.
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('shoes', views.shoes),
     path('show', views.show),
     path('edit/<int:id>', views.edit),
     path('update/<int:id>', views.update),
-    path('delete/<int:id>', views.destroy),
-    path('',views.show)
+    path('delete/<int:id>', views.destory),
+    path('check_out/<int:id>', views.check_out),
+    path('mpesa', views.mpesa),
+    path('checkout/<int:id>', views.checkout),
+    path('', views.show)
 ]
